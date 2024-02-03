@@ -1,10 +1,13 @@
+import { useState } from "react";
 import "./App.css";
-import { Person } from "./Person";
 
 function App() {
+  const [counter, setCounter] = useState<number>(0);
   return (
     <>
-      <Person name="sushant" age={22} email="sushantluitel" />
+      <button onClick={() => setCounter((prev) => prev + 1)}>+</button>
+      <h1>{counter}</h1>
+      <button onClick={() => setCounter((prev) => prev - 1)}>-</button>
     </>
   );
 }
