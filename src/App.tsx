@@ -1,10 +1,12 @@
 import "./App.css";
-import { Counter } from "./Components/Counter";
+import { Person } from "./Components/Person";
+import { IsLogged } from "./Components/IsLogged";
 
 function App() {
   return (
     <>
-      <Counter />
+      <Person name="sushant" age={22} />
+      <IsLogged name="sushant" age={22} isLoggedin={true} />
     </>
   );
 }
